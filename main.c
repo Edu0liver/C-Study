@@ -6,8 +6,13 @@
 
 // Paths
 #include "fatorial.c"
+#include "test.c"
+#include "pyramid.c"
 
-int main()
-{
+// Constants
+#define PI 3.14159
     
+void main()
+{
+    pyramid();
 }

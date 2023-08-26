@@ -15,7 +15,7 @@ struct Pessoa {
     char email[50];
 };
 
-int main() {
+void test() {
     struct Pessoa pessoa;
     unsigned int *id = &pessoa.id;
     
