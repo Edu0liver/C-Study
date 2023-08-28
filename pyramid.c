@@ -23,6 +23,4 @@ void pyramid()
         }
         printf("\n");
     }
-
-    return 0;
 }

@@ -24,20 +24,21 @@ void main()
     bool exit = false;
 
     // Menu
-    while (!exit)
+    do
     {
         printf("\n\n");
         printf("1 - Fatorial\n");
         printf("2 - Test\n");
         printf("3 - Pyramid\n");
-        printf("4 - Exit\n");
+        printf("4 - Sign Up\n");
+        printf("5 - Exit\n");
         printf("Option: ");
         scanf("%d", &option);
 
         switch (option)
         {
             case 1:
-                int x = 0;
+                int x;
                 printf("Digite um numero: ");
                 scanf("%d", &x);
 
@@ -51,11 +52,14 @@ void main()
                 pyramid();
                 break;
             case 4:
+                sign_up();
+                break;
+            case 5:
                 exit = true;
                 break;
             default:
                 printf("Invalid option\n");
                 break;
         }
-    }
+    } while (exit == false);
 }
