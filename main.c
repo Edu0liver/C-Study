@@ -19,6 +19,43 @@ const char date_const[] = __DATE__;
 
 void main()
 {
-    printf("%s", time_const);
-    printf("%s", date_const);
+    // Variables
+    int option;
+    bool exit = false;
+
+    // Menu
+    while (!exit)
+    {
+        printf("\n\n");
+        printf("1 - Fatorial\n");
+        printf("2 - Test\n");
+        printf("3 - Pyramid\n");
+        printf("4 - Exit\n");
+        printf("Option: ");
+        scanf("%d", &option);
+
+        switch (option)
+        {
+            case 1:
+                int x = 0;
+                printf("Digite um numero: ");
+                scanf("%d", &x);
+
+                printf("Fatorial de %d: %d", x, fatorial_func(&x));
+                
+                break;
+            case 2:
+                test();
+                break;
+            case 3:
+                pyramid();
+                break;
+            case 4:
+                exit = true;
+                break;
+            default:
+                printf("Invalid option\n");
+                break;
+        }
+    }
 }
