@@ -11,8 +11,14 @@
 
 // Constants
 #define PI 3.14159
-    
+#define DATE __DATE__
+#define TIME __TIME__
+
+const char time_const[] =  __TIME__;
+const char date_const[] = __DATE__;
+
 void main()
 {
-    pyramid();
+    printf("%s", time_const);
+    printf("%s", date_const);
 }
